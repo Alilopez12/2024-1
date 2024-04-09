@@ -1,3 +1,4 @@
+package co.edu.uniquindio.poo;
 public class CursoTest {
     @test
     public void datosCompletos(){
