@@ -7,6 +7,8 @@
  */
 package co.edu.uniquindio.poo;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
@@ -26,4 +28,17 @@ public class AppTest {
         assertTrue(true);
         LOG.info("Finalizando test shouldAnswerWithTrue");
     }
+
+    @Test
+    public void areaCirculoPositivo(){
+        LOG.info("Iniciando test calcular area de un circulo");
+
+        Circulo circulo = new Circulo(10.0);
+        assertEquals(314.159, circulo.calcularArea(), 0.05);
+
+        LOG.info("Finalizando test area de un circulo");
+    }
+
+
+  
 }

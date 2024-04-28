@@ -9,6 +9,9 @@ public class Cuadrado extends FiguraGeometrica {
     public Cuadrado(double lado) {
         this.lado = lado;
     }
+
+    @Override
+    
     public double calcularArea() {
         return lado * lado;
     }
